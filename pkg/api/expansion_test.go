@@ -2,9 +2,10 @@ package api_test
 
 import (
 	"bytes"
+	"testing"
+
 	"github.com/deifyed/kaex-go/pkg/api"
 	"github.com/sebdah/goldie/v2"
-	"testing"
 )
 
 func TestExpand(t *testing.T) {

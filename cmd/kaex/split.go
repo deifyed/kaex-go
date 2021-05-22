@@ -3,12 +3,13 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"io/ioutil"
+	"path"
+
 	"github.com/deifyed/kaex-go/pkg/api"
 	"github.com/deifyed/kaex-go/pkg/extraction"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"
-	"io/ioutil"
-	"path"
 )
 
 const splitLongHelpText = `Splits a yaml file containing multiple Kubernetes resources.

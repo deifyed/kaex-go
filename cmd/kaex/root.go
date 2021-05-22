@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/deifyed/kaex-go/pkg/api"
-	"github.com/spf13/cobra"
 	"os"
 	"path"
+
+	"github.com/deifyed/kaex-go/pkg/api"
+	"github.com/spf13/cobra"
 )
 
 var (

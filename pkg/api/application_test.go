@@ -1,11 +1,12 @@
 package api_test
 
 import (
-	"github.com/deifyed/kaex-go/pkg/api"
-	"github.com/stretchr/testify/assert"
 	"io"
 	"strings"
 	"testing"
+
+	"github.com/deifyed/kaex-go/pkg/api"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestParseApplication(t *testing.T) {

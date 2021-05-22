@@ -6,8 +6,9 @@ import (
 	"io"
 	"io/ioutil"
 	"regexp"
-	"sigs.k8s.io/yaml"
 	"strings"
+
+	"sigs.k8s.io/yaml"
 )
 
 var emptyMatcher, _ = regexp.Compile("^.*: (null|{})$")

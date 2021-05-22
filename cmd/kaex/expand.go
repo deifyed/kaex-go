@@ -3,10 +3,11 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/deifyed/kaex-go/pkg/api"
-	"github.com/spf13/cobra"
 	"io"
 	"os"
+
+	"github.com/deifyed/kaex-go/pkg/api"
+	"github.com/spf13/cobra"
 )
 
 type ExpandOptions struct {
