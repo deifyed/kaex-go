@@ -1,9 +1,8 @@
 package api
 
 import (
-	v1 "k8s.io/api/networking/v1beta1"
+	"k8s.io/api/networking/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/intstr"
 	"net/url"
 	"strings"
 )
@@ -44,11 +43,14 @@ func CreateIngress(app Application) (v1.Ingress, error) {
 				Paths: []v1.HTTPIngressPath{{
 					Path: "/",
 					Backend: v1.IngressBackend{
-						ServiceName: app.Name,
-						ServicePort: intstr.IntOrString{
-							IntVal: 80,
+						Service: &v1.IngressServiceBackend{
+							Name: app.Name,
+							Port: v1.ServiceBackendPort{
+								Number: 80,
+							},
 						},
 					},
+					PathType: pathTypeAsPtr(v1.PathTypePrefix),
 				}},
 			},
 		},
@@ -69,4 +71,8 @@ func CreateIngress(app Application) (v1.Ingress, error) {
 	}
 
 	return ingress, nil
+}
+
+func pathTypeAsPtr(p v1.PathType) *v1.PathType {
+	return &p
 }

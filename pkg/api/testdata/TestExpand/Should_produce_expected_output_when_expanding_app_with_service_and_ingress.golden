@@ -22,9 +22,12 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: dummy-app
-          servicePort: 80
+          service:
+            name: dummy-app
+            port:
+              number: 80
         path: /
+        pathType: Prefix
 
 ---
 
