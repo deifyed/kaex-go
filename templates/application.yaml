@@ -1,7 +1,7 @@
 # A name that identifies your app
 name: my-app
 # An URI for your app Docker image
-image: docker.pkg.github.com/my-org/my-repo/my-package
+image: ghcr.io/my-org/my-package
 # The version of your app which is available as an image
 version: 0.0.1
 
@@ -14,14 +14,8 @@ url: https://my-domain.io
 # Comment this out to avoid setting up a service (required if url is specified)
 port: 3000
 
-# How many replicas of your application should we scaffold
-#replicas: 3 # 1 by default
-
 # A namespace where your app will live
 #namespace: my-namespace
-
-# A Docker repository secret for pulling your image
-#imagePullSecret: my-pull-secret-name
 
 # The environment your app requires
 #environment:
@@ -31,6 +25,12 @@ port: 3000
 #volumes:
 #  - /path/to/mount/volume: # Requests 1Gi by default
 #  - /path/to/mount/volume: 24Gi
+
+# How many replicas of your application should we scaffold
+#replicas: 3 # 1 by default
+
+# A Docker repository secret for pulling your image
+#imagePullSecret: my-pull-secret-name
 
 # Annotations for your ingress
 #ingress:
