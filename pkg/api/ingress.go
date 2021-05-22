@@ -1,10 +1,11 @@
 package api
 
 import (
-	"k8s.io/api/networking/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"net/url"
 	"strings"
+
+	v1 "k8s.io/api/networking/v1"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 func generateDefaultIngress() v1.Ingress {
