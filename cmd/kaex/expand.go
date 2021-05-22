@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/oslokommune/kaex/pkg/api"
+	"github.com/deifyed/kaex-go/pkg/api"
 	"github.com/spf13/cobra"
 	"io"
 	"os"

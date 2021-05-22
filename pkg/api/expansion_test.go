@@ -2,7 +2,7 @@ package api_test
 
 import (
 	"bytes"
-	"github.com/oslokommune/kaex/pkg/api"
+	"github.com/deifyed/kaex-go/pkg/api"
 	"github.com/sebdah/goldie/v2"
 	"testing"
 )

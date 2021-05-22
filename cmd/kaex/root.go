@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/oslokommune/kaex/pkg/api"
+	"github.com/deifyed/kaex-go/pkg/api"
 	"github.com/spf13/cobra"
 	"os"
 	"path"

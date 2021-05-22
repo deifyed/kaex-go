@@ -1,7 +1,7 @@
 package api_test
 
 import (
-	"github.com/oslokommune/kaex/pkg/api"
+	"github.com/deifyed/kaex-go/pkg/api"
 	"github.com/stretchr/testify/assert"
 	"io"
 	"strings"

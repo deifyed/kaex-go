@@ -1,6 +1,6 @@
-module github.com/oslokommune/kaex
+module github.com/deifyed/kaex-go
 
-go 1.15
+go 1.16
 
 require (
 	github.com/gogo/protobuf v1.3.2 // indirect
@@ -14,8 +14,6 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	k8s.io/api v0.19.2
 	k8s.io/apimachinery v0.19.2
-	k8s.io/klog v1.0.0 // indirect
 	k8s.io/klog/v2 v2.5.0 // indirect
-	sigs.k8s.io/structured-merge-diff/v3 v3.0.0 // indirect
 	sigs.k8s.io/yaml v1.2.0
 )

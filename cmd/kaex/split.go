@@ -3,8 +3,8 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/oslokommune/kaex/pkg/api"
-	"github.com/oslokommune/kaex/pkg/extraction"
+	"github.com/deifyed/kaex-go/pkg/api"
+	"github.com/deifyed/kaex-go/pkg/extraction"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"
 	"io/ioutil"
